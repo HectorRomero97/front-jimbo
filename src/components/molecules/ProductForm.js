@@ -21,7 +21,7 @@ const ProductForm = () => {
       <input className='my-2' type="text" value={productName} onChange={(e) => setProductName(e.target.value)} placeholder="Nombre del producto" required />
       <input className='my-2' type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)} placeholder="Descripcion del Producto" />
       <input className='my-2' type="number" value={price} onChange={(e) => setPrice(e.target.value)} placeholder="Precio" required />
-      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-2" type="submit">Submit</button>
+      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-2" type="submit">Enviar</button>
     </form>
   );
 };

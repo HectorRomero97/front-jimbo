@@ -20,7 +20,7 @@ const UserForm = () => {
     <form className='flex flex-col' onSubmit={crearUsuario}>
       <input type="text" className='my-2' value={userName} onChange={(e) => setProductName(e.target.value)} placeholder="Nombre del usuario" required />
       <input type="text" className='my-2' value={userEmail} onChange={(e) => setProductDescription(e.target.value)} placeholder="Email del Usuario" required/>
-      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-2" type="submit">Submit</button>
+      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-2" type="submit">Enviar</button>
     </form>
   );
 };
