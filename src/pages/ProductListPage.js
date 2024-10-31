@@ -15,9 +15,9 @@ const ProductListPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-black text-white">
-      <div className="artboard artboard-horizontal phone-3 bg-gray-900 rounded-lg flex flex-col justify-center items-center h-screen">
-        <h2 className="text-xl">Lista de Productos</h2>
+    <div className="flex flex-col justify-center items-center h-screen bg-gray-900 text-white">
+     
+        <h2 className="text-xl my-5">Lista de Productos</h2>
         <div className="grid grid-cols-1 gap-4">
         { products.length > 0 ? (
           products.map(product => (
@@ -28,9 +28,8 @@ const ProductListPage = () => {
         }
       </div>
       <Link to="/create-product">
-      <button>Crear Nuevo Producto</button>
+      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-5">Crear Nuevo Producto</button>
       </Link>
-      </div>
     </div>
   );
 };

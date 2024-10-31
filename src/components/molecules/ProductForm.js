@@ -17,11 +17,11 @@ const ProductForm = () => {
   };
 
   return (
-    <form onSubmit={crearProducto}>
-      <input type="text" value={productName} onChange={(e) => setProductName(e.target.value)} placeholder="Nombre del producto" required />
-      <input type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)} placeholder="Descripcion del Producto" />
-      <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} placeholder="Precio" required />
-      <button type="submit">Submit</button>
+    <form className='flex flex-col' onSubmit={crearProducto}>
+      <input className='my-2' type="text" value={productName} onChange={(e) => setProductName(e.target.value)} placeholder="Nombre del producto" required />
+      <input className='my-2' type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)} placeholder="Descripcion del Producto" />
+      <input className='my-2' type="number" value={price} onChange={(e) => setPrice(e.target.value)} placeholder="Precio" required />
+      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-2" type="submit">Submit</button>
     </form>
   );
 };

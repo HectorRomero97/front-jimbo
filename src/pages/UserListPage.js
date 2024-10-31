@@ -15,8 +15,8 @@ const UserListPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-black text-white">
-      <h2 className="text-xl">Lista de Usuarios</h2>
+    <div className="flex flex-col justify-center items-center h-screen bg-gray-900 text-white">
+      <h2 className="text-xl my-5">Lista de Usuarios</h2>
       <div className="grid grid-cols-1 gap-4">
         { users.length > 0 ? (
           users.map(user => (
@@ -27,7 +27,7 @@ const UserListPage = () => {
         }
       </div>
       <Link to="/create-user">
-        <button>Crear Nuevo Usuario</button>
+        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md my-5">Crear Nuevo Usuario</button>
       </Link>
     </div>
   );

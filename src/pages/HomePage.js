@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-black text-white">
-      <div className="artboard artboard-horizontal phone-3 bg-gray-900 rounded-lg flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen bg-gray-900 text-white">
       <h1 className="text-3xl mb-4">Elige un camino</h1>
         <div className="space-x-4">
             <Link to="/users">
@@ -17,7 +16,6 @@ const HomePage = () => {
                 Ver Productos
               </button>
             </Link> 
-        </div>
         </div>
     </div>
   );
