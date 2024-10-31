@@ -10,7 +10,7 @@ const UserForm = () => {
     const newUser = {user_name: userName, email: userEmail };
 
     try {
-      await axios.post('http://localhost:8000/users', newUser); 
+      await axios.post(`http://localhost:8000/users/?user_name=${newUser.user_name}&email=${newUser.email}`); 
     } catch (error) {
       console.error('Error durante la creacion del producto', error);
     }

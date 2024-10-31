@@ -9,9 +9,8 @@ const ProductForm = () => {
   const crearProducto = async (e) => {
     e.preventDefault();
     const newProduct = { product_name: productName, product_description: productDescription, price: parseFloat(price) };
-
     try {
-      await axios.post('http://localhost:8000/products', newProduct);
+      await axios.post(`http://localhost:8000/products/?product_name=${newProduct.product_name}&price=${newProduct.price}&product_description=${newProduct.product_description}`);
     } catch (error) {
       console.error('Error durante la creacion del producto', error);
     }

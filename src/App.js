@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import UserListPage from './pages/UserListPage';
 import ProductListPage from './pages/ProductListPage';
-import CreateProductPage from './pages/AddProductPage';
-import AddProductPage from './pages/AddUserPage';
+import AddUserPage from './pages/AddUserPage';
+import AddProductPage from './pages/AddProductPage';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <Route path="/" element={<HomePage/> } />
         <Route path="/users" element={<UserListPage/>} />
         <Route path="/products" element={<ProductListPage/>} />
-        <Route path="/create-product" element={<CreateProductPage/>} />
-        <Route path="/add-product" element={<AddProductPage/>} />
+        <Route path="/create-user" element={<AddUserPage/>} />
+        <Route path="/create-product" element={<AddProductPage/>} />
       </Routes>
     </Router>
   );
